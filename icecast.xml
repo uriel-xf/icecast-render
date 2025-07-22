@@ -1,6 +1,6 @@
 <icecast>
   <location>Mexico</location>
-  <admin>admin@enteratezacatelco.com.mx</admin>
+  <admin>endless.dkn@gmail.com</admin>
 
   <limits>
     <clients>100</clients>
@@ -14,7 +14,7 @@
   </limits>
 
   <authentication>
-    <source-password>mipassword123</source-password>
+    <source-password>enterateZ8462dj</source-password>
     <admin-user>admin</admin-user>
     <admin-password>enterateZ8462</admin-password>
   </authentication>
