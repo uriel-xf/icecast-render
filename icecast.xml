@@ -1,35 +1,35 @@
 <icecast>
-    <location>Zacatelco</location>
-    <admin>admin@example.com</admin>
+  <location>Zacatelco</location>
+  <admin>admin@enteratezacatelco.com.mx</admin>
 
-    <limits>
-        <clients>100</clients>
-        <sources>2</sources>
-    </limits>
+  <limits>
+    <clients>100</clients>
+    <sources>2</sources>
+  </limits>
 
-    <authentication>
-        <source-password>hackme</source-password>
-        <admin-user>admin</admin-user>
-        <admin-password>hackme</admin-password>
-    </authentication>
+  <authentication>
+    <source-password>hackme</source-password>
+    <admin-user>admin</admin-user>
+    <admin-password>hackme</admin-password>
+  </authentication>
 
-    <hostname>0.0.0.0</hostname>
-    <listen-socket>
-        <port>8000</port>
-    </listen-socket>
+  <hostname>0.0.0.0</hostname>
+  <listen-socket>
+    <port>8000</port>
+  </listen-socket>
 
-    <fileserve>1</fileserve>
+  <fileserve>1</fileserve>
 
-    <paths>
-        <logdir>/var/log/icecast</logdir>
-        <webroot>/usr/share/icecast/web</webroot>
-        <adminroot>/usr/share/icecast/admin</adminroot>
-        <alias source="/" dest="/status.xsl"/>
-    </paths>
+  <paths>
+    <logdir>/var/log/icecast</logdir>
+    <webroot>/usr/share/icecast/web</webroot>
+    <adminroot>/usr/share/icecast/admin</adminroot>
+    <alias source="/" dest="/status.xsl"/>
+  </paths>
 
-    <logging>
-        <accesslog>access.log</accesslog>
-        <errorlog>error.log</errorlog>
-        <loglevel>3</loglevel>
-    </logging>
+  <logging>
+    <accesslog>access.log</accesslog>
+    <errorlog>error.log</errorlog>
+    <loglevel>3</loglevel>
+  </logging>
 </icecast>
