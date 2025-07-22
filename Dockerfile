@@ -1,6 +1,9 @@
 FROM debian:bullseye-slim
 
-# Crear usuario y grupo "icecast"
+# Desactiva prompts interactivos
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Instalar Icecast y soporte MIME
 RUN apt-get update && \
     apt-get install -y icecast2 mime-support && \
     useradd -r icecast && \
@@ -9,7 +12,7 @@ RUN apt-get update && \
 # Copiar la configuración
 COPY icecast.xml /etc/icecast2/icecast.xml
 
-# Establecer permisos
+# Permisos y logs
 RUN chown -R icecast:icecast /etc/icecast2 && \
     mkdir -p /var/log/icecast2 && \
     chown -R icecast:icecast /var/log/icecast2
