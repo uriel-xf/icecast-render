@@ -13,7 +13,13 @@
     <admin-password>hackme</admin-password>
   </authentication>
 
-  <hostname>0.0.0.0</hostname>
+  <changeowner>
+    <user>icecast</user>
+    <group>icecast</group>
+  </changeowner>
+
+  <bind-address>0.0.0.0</bind-address>
+
   <listen-socket>
     <port>8000</port>
   </listen-socket>
